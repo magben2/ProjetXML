@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE master SYSTEM "ue.dtd">
+
+<master>
+	<intervenant id="agopian">
+		<nom>Roland Agopian</nom>
+		<mail>roland.agopian&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="bechet">
+		<nom>Frederic Bechet</nom>
+		<mail>frederic.bechet&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="boucelma">
+		<nom>Omar Boucelma</nom>
+		<mail>omar.boucelma&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="broche">
+		<nom>Martine Broche</nom>
+		<mail>martine.broche&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="estellon">
+		<nom>Bertrand Estellon</nom>
+		<mail>bertrand.estellon&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="godard">
+		<nom>Emmanuel Godard</nom>
+		<mail>emmanuel.godard&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="massat">
+		<nom>Jean-Luc Massat</nom>
+		<mail>jean-luc.massat&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="morin">
+		<nom>Rémi Morin</nom>
+		<mail>remi.morin&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="novelli">
+		<nom>Noel Novelli</nom>
+		<mail>noel.novelli&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+	<intervenant id="sabatier">
+		<nom>Claude Sabatier</nom>
+		<mail>claude.sabatier&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+	
+		
+	<unite id="id1">
+		<nom></nom>
+		<mail></mail>
+		<nbCredit></nbCredit>
+		<resume></resume>
+		<plan></plan>
+		<lieu></lieu>
+		
+		<ref-intervenant ref="massat"></ref-intervenant>
+	</unite>
+	<unite id="id2">
+		<nom></nom>
+		<mail></mail>
+		<nbCredit></nbCredit>
+		<resume></resume>
+		<plan></plan>
+		<lieu></lieu>
+		
+		<ref-intervenant ref="massat"></ref-intervenant>
+	</unite>
+	
+	<parcours>
+		<responsable>Remi MORIN</responsable>
+		<nom>Tronc commun</nom>
+		<description>L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</description>
+		<debouche>Recherche</debouche>
+		<debouche>Professionel</debouche>
+	</parcours>
+	<parcours>
+		<responsable>Emmanuel GODARD</responsable>
+		<responsable>Jean-Luc MASSAT</responsable>
+		<nom>Fiabilité, sécurité et intégration logicielle</nom>
+		<description>Cette spécialité à finalité professionnelle est une composante du Master Informatique. Elle est déclinée en deux parcours qui partagent un tronc-commun au début de la deuxième année (semestre 3).</description>
+		<debouche>Fiabilité et sécurité informatique</debouche>
+		<debouche>Intégration de systèmes logiciels</debouche>
+	</parcours>
+</master>

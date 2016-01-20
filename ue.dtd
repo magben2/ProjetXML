@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!ELEMENT master		(unite+, intervenant+, parcours)>
+<!ELEMENT intervenant	(nom, mail, web)>
+<!ELEMENT parcours		(responsable+, nom, description, debouche+, semestre)>
+<!ELEMENT semestre		(bloc-ue)>
+<!ELEMENT unite			(nom, nbCredit, resume, plan, lieu, ref-intervenant+)>
+<!ELEMENT bloc-ue		(ref-unite+)>
+
+<!ELEMENT nom				(#PCDATA)>
+<!ELEMENT mail				(#PCDATA)>
+<!ELEMENT nbCredit			(#PCDATA)>
+<!ELEMENT resume			(#PCDATA)>
+<!ELEMENT plan				(#PCDATA)>
+<!ELEMENT lieu				(#PCDATA)>
+<!ELEMENT web				(#PCDATA)>
+<!ELEMENT ref-intervenant 	(#PCDATA)>
+<!ELEMENT responsable	 	(#PCDATA)>
+<!ELEMENT description	 	(#PCDATA)>
+<!ELEMENT debouche		 	(#PCDATA)>
+
+<!ATTLIST bloc-ue 			role 	(obligatoire | option)		#REQUIRED>
+<!ATTLIST unite 			id 		ID 		#REQUIRED>
+<!ATTLIST intervenant 		id 		ID 		#REQUIRED>
+<!ATTLIST responsable		id 		ID	 	#REQUIRED><!-- à voir -->
+<!ATTLIST ref-intervenant 	ref 	IDREF 	#REQUIRED>
+<!ATTLIST ref-responsable	ref 	IDREF 	#REQUIRED><!-- à voir -->
+<!ATTLIST ref-unite			ref 	IDREF 	#REQUIRED><!-- à voir -->
+
+<!ENTITY luminy 		"Luminy">
+<!ENTITY stjerome 		"St-Jérôme">
+<!ENTITY etoile 		"l'Étoile">
+<!ENTITY mail.luminy	"@univ-amu.fr">
+<!ENTITY dom.luminy		"univ-mrs.fr">
+<!ENTITY dom.dil		"dil.&dom.luminy;">
