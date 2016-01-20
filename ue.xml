@@ -25,6 +25,18 @@
 		<mail>martine.broche&mail.luminy;</mail>
 		<web></web>
 	</intervenant>
+
+	<intervenant id="cepoi">
+		<nom>Victor Cepoi</nom>
+		<mail>victor.cepoi&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+
+	<intervenant id="contensin">
+		<nom>Magalie Contensin</nom>
+		<mail>magalie.contensin&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
 	
 	<intervenant id="estellon">
 		<nom>Bertrand Estellon</nom>
@@ -43,13 +55,25 @@
 		<mail>jean-luc.massat&mail.luminy;</mail>
 		<web></web>
 	</intervenant>
+
+	<intervenant id="molin">
+		<nom>Alain Dal Molin</nom>
+		<mail>alain.dal-molin&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
 	
 	<intervenant id="morin">
 		<nom>Rémi Morin</nom>
 		<mail>remi.morin&mail.luminy;</mail>
 		<web></web>
 	</intervenant>
-	
+
+	<intervenant id="niebert">
+		<nom>Peter Niebert</nom>
+		<mail>peter.niebert&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+
 	<intervenant id="novelli">
 		<nom>Noel Novelli</nom>
 		<mail>noel.novelli&mail.luminy;</mail>
@@ -61,27 +85,279 @@
 		<mail>claude.sabatier&mail.luminy;</mail>
 		<web></web>
 	</intervenant>
+
+	<intervenant id="santocanale">
+		<nom>Luigi Santocanale</nom>
+		<mail>luigi.santocanale&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+
+	<intervenant id="das">
+		<nom>Shantanu Das</nom>
+		<mail>shantanu.das&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+
+	<intervenant id="olive">
+		<nom>Frederic Olive</nom>
+		<mail>frederic.olive&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
+
+
 	
 		
-	<unite id="id1">
-		<nom></nom>
-		<mail></mail>
-		<nbCredit></nbCredit>
-		<resume></resume>
+	<unite id="ENSINAU1">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
 		<plan></plan>
-		<lieu></lieu>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU2">
+		<nom>Complexité</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.
+		Classes P et NP. Problèmes NP-complets
+		Méthodes de résolution des problèmes NP-Complets.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="olive"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU3">
+		<nom>Réseaux</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Architecture en couches, standard OSI</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="godard"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU4">
+		<nom>Programmation fonctionnelle</nom>
+		<nbCredit>3</nbCredit>
+		<resume> Introduction à la programmation fonctionnelle, sur l'exemple du langage</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="santocanale"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU12">
+		<nom>BDRa</nom>
+		<nbCredit>3</nbCredit>
+		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="sabatier"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU6">
+		<nom>Programmation logique</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="bechet"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU7">
+		<nom>Outils de l'internet</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Présentation d'Internet</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="contensin"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU8">
+		<nom>Système embarqué</nom>
+		<nbCredit>3</nbCredit>
+		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="niebert"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU9">
+		<nom>Fondamentaux pour l'ingénierie des langues</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Algorithmes d'analyse syntaxique pour grammaires ambiguës</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="bechet"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU10">
+		<nom>Modèles à évènements discrets</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de Pétri.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="boucelma"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINAU13">
+		<nom>Pratique de la cryptographie</nom>
+		<nbCredit>3</nbCredit>
+		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="morin"></ref-intervenant>
+	</unite>	
+
+
+	<unite id="ENSINBU1">
+		<nom>Anglais</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="molin"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU2">
+		<nom>Communication</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Notions de management et de travail collaboratif</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="broche"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU4">
+		<nom>XML</nom>
+		<nbCredit>3</nbCredit>
+		<resume>XML, DTD, XSD</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
 		
 		<ref-intervenant ref="massat"></ref-intervenant>
 	</unite>
-	<unite id="id2">
-		<nom></nom>
-		<mail></mail>
-		<nbCredit></nbCredit>
-		<resume></resume>
+
+	<unite id="ENSINBU5">
+		<nom>Algorithmique et recherche opérationnelle</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Programmation linéaire</resume>
 		<plan></plan>
-		<lieu></lieu>
+		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="massat"></ref-intervenant>
+		<ref-intervenant ref="cepoi"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU15">
+		<nom>Programmation parallèle</nom>
+		<nbCredit>3</nbCredit>
+		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="morin"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU6">
+		<nom>Projet</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="morin"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU7">
+		<nom>Stage de deux mois</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="morin"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU8">
+		<nom>Sémantique</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Le lambda-calcul simplement typé</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="morin"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU9">
+		<nom>Algorithmique distribuée</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="das"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU10">
+		<nom>Intégration des systèmes d'information</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Problématique d'intégration des SI</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="boucelma"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU10">
+		<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
+		<nbCredit>3</nbCredit>
+		<resume><p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</p><p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p></resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU12">
+		<nom>Intelligence artificielle</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Introduction à l'IA</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU13">
+		<nom>Algorithme à performance garantie</nom>
+		<nbCredit>3</nbCredit>
+		<resume>Algorithmes d'approximation de nature combinatoire pour les problèmes</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINBU16">
+		<nom>Introduction à l'apprentissage automatique</nom>
+		<nbCredit>3</nbCredit>
+		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
 	</unite>
 	
 	<parcours>
@@ -93,10 +369,20 @@
 	</parcours>
 	<parcours>
 		<responsable>Emmanuel GODARD</responsable>
+		<nom>Fiabilité et sécurité informatique</nom>
+		<description>La formation donne les principes et techniques liés à la conception de systèmes informatiques surs dans un environnement ouvert et hétérogène. Elle forme les étudiants aux principes et méthodes de développement modernes qui reposent sur des outils de prototypage, de test et de suivi de logiciels, avec des méthodologies normalisées. Elle apporte des compétences fortes en sécurité informatique dans les domaines liés à l'échange d'information (Web-services, protocoles de communication et cryptographiques,..) et à la communication entre systèmes (réseaux hétérogènes et applications embarquées ou distribuées).</description>
+		<debouche>Ingénieur études et développement</debouche>
+		<debouche>Responsable réseaux</debouche>
+		<debouche>Responsable systèmes et sécurité</debouche>
+		<debouche>Ingénieur qualité</debouche>
+	</parcours>
+		<parcours>
 		<responsable>Jean-Luc MASSAT</responsable>
-		<nom>Fiabilité, sécurité et intégration logicielle</nom>
-		<description>Cette spécialité à finalité professionnelle est une composante du Master Informatique. Elle est déclinée en deux parcours qui partagent un tronc-commun au début de la deuxième année (semestre 3).</description>
-		<debouche>Fiabilité et sécurité informatique</debouche>
-		<debouche>Intégration de systèmes logiciels</debouche>
+		<nom>Intégration de systèmes logiciels</nom>
+		<description>L'objectif de ce parcours est d'initier les étudiants à la conception et à la réalisation d'applications dans de tels cadres. La formation mettra plus particulièrement l'accent sur les notions d'architecture logicielle, de programmation par composants, de qualité et de fiabilité. Elle utilisera la plateforme Java Enterprise Edition pour concrétiser les concepts présentés.</description>
+		<debouche>Ingénieur études et développement</debouche>
+		<debouche>Architecte logiciel</debouche>
+		<debouche>Ingénieur en système d'information</debouche>
+		<debouche>Expert technique ou fonctionnel</debouche>
 	</parcours>
 </master>
