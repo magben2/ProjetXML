@@ -2,7 +2,7 @@
 
 <!ELEMENT master		(unite+, intervenant+, parcours)>
 <!ELEMENT intervenant	(nom, mail, web)>
-<!ELEMENT parcours		(responsable+, nom, description, debouche+, semestre)>
+<!ELEMENT parcours		(responsable+, nom, description, debouche+, semestre+)>
 <!ELEMENT semestre		(bloc-ue)>
 <!ELEMENT unite			(nom, nbCredit, resume, plan, lieu, ref-intervenant+)>
 <!ELEMENT bloc-ue		(ref-unite+)>
@@ -19,13 +19,25 @@
 <!ELEMENT description	 	(#PCDATA)>
 <!ELEMENT debouche		 	(#PCDATA)>
 
+<!ELEMENT p					(#PCDATA|(b|i|a)*)>
+<!ELEMENT b					(#PCDATA)>
+<!ELEMENT i					(#PCDATA)>
+<!ELEMENT a					(#PCDATA)>
+<!ELEMENT ul				(li+)>
+<!ELEMENT li				(#PCDATA)>
+<!ELEMENT table				(tr+)>
+<!ELEMENT tr				(td+)>
+<!ELEMENT td				(#PCDATA)>
+
 <!ATTLIST bloc-ue 			role 	(obligatoire | option)		#REQUIRED>
-<!ATTLIST unite 			id 		ID 		#REQUIRED>
-<!ATTLIST intervenant 		id 		ID 		#REQUIRED>
-<!ATTLIST responsable		id 		ID	 	#REQUIRED><!-- à voir -->
-<!ATTLIST ref-intervenant 	ref 	IDREF 	#REQUIRED>
-<!ATTLIST ref-responsable	ref 	IDREF 	#REQUIRED><!-- à voir -->
-<!ATTLIST ref-unite			ref 	IDREF 	#REQUIRED><!-- à voir -->
+<!ATTLIST unite 			id 		ID 			#REQUIRED>
+<!ATTLIST intervenant 		id 		ID 			#REQUIRED>
+<!ATTLIST responsable		id 		ID	 		#REQUIRED><!-- voir -->
+<!ATTLIST ref-intervenant 	ref 	IDREF 		#REQUIRED>
+<!ATTLIST ref-responsable	ref 	IDREF 		#REQUIRED><!-- voir -->
+<!ATTLIST ref-unite			ref 	IDREF 		#REQUIRED><!-- voir -->
+
+<!ATTLIST a		 			href	(#PCDATA) 	#REQUIRED>
 
 <!ENTITY luminy 		"Luminy">
 <!ENTITY stjerome 		"St-Jérôme">
