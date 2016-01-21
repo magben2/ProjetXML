@@ -26,15 +26,15 @@
 		<web></web>
 	</intervenant>
 
-	<intervenant id="cepoi">
-		<nom>Victor Cepoi</nom>
-		<mail>victor.cepoi&mail.luminy;</mail>
+	<intervenant id="chepoi">
+		<nom>Victor Chepoi</nom>
+		<mail>victor.chepoi&mail.luminy;</mail>
 		<web></web>
 	</intervenant>
 
 	<intervenant id="contensin">
-		<nom>Magalie Contensin</nom>
-		<mail>magalie.contensin&mail.luminy;</mail>
+		<nom>Magali Contensin</nom>
+		<mail>magali.contensin&mail.luminy;</mail>
 		<web></web>
 	</intervenant>
 	
@@ -105,8 +105,139 @@
 	</intervenant>
 
 
-	
+	<unite id=" ENSINCU27">
+		<nom>Anglais 2</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.</p>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
 		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU28">
+		<nom>Communication 2</nom>
+		<nbCredit>3</nbCredit>
+		<resume><p>L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.</p>
+
+		<ul>
+			<li>Valorisation du parcours de formation</li>
+			<li>Clarification des motivations et de leurs incidences sur des choix professionnels</li>
+			<li>Identification des aptitudes et des compétences,</li>
+			<li>Positionnement du projet personnel et professionnel</li>
+			<li>Ajustement des profils annonce / candidature</li>
+			<li>Préparation aux entretiens de recrutement</li>
+			<li>Rédaction de curriculum vitae et de lettres de motivation</li>
+		</ul>
+	</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU29">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU30">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU31">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU67">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU32">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU33">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU34">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU35">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINDU3">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINDU4">
+		<nom>Genie Logiciel</nom>
+		<nbCredit>6</nbCredit>
+		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="novelli"></ref-intervenant>
+	</unite>
+
 	<unite id="ENSINAU1">
 		<nom>Genie Logiciel</nom>
 		<nbCredit>6</nbCredit>
@@ -320,7 +451,7 @@
 		<ref-intervenant ref="boucelma"></ref-intervenant>
 	</unite>
 
-	<unite id="ENSINBU10">
+	<unite id="ENSINBU11">
 		<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 		<nbCredit>3</nbCredit>
 		<resume><p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</p><p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p></resume>
@@ -359,30 +490,103 @@
 		
 		<ref-intervenant ref="novelli"></ref-intervenant>
 	</unite>
-	
+
+
 	<parcours>
-		<responsable>Remi MORIN</responsable>
-		<nom>Tronc commun</nom>
+		<ref-responsable ref="morin"></ref-responsable>
+		<nom>M1</nom>
 		<description>L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</description>
 		<debouche>Recherche</debouche>
 		<debouche>Professionel</debouche>
+		<semestre id="s1">
+			<bloc-unite role="obligatoire">
+				<nom>Unités obligatoires</nom>
+				<ref-unite ref="ENSINAU1"></ref-unite>
+				<ref-unite ref="ENSINAU2"></ref-unite>
+				<ref-unite ref="ENSINAU3"></ref-unite>
+				<ref-unite ref="ENSINAU4"></ref-unite>
+				<ref-unite ref="ENSINAU12"></ref-unite>
+			</bloc-unite>
+			<bloc-unite role="facultatif">
+				<nom>6 crédits à choisir</nom>
+				<ref-unite ref="ENSINAU6"></ref-unite>
+				<ref-unite ref="ENSINAU7"></ref-unite>
+				<ref-unite ref="ENSINAU8"></ref-unite>
+				<ref-unite ref="ENSINAU9"></ref-unite>
+				<ref-unite ref="ENSINAU10"></ref-unite>
+				<ref-unite ref="ENSINAU13"></ref-unite>
+			</bloc-unite>
+		</semestre>
+		<semestre id="s2">
+			<bloc-unite role="obligatoire">
+				<nom>Unités obligatoires</nom>
+				<ref-unite ref="ENSINBU1"></ref-unite>
+				<ref-unite ref="ENSINBU2"></ref-unite>
+				<ref-unite ref="ENSINBU4"></ref-unite>
+				<ref-unite ref="ENSINBU5"></ref-unite>
+				<ref-unite ref="ENSINBU15"></ref-unite>
+			</bloc-unite>
+			<bloc-unite role="facultatif">
+				<nom>6 crédits à choisir</nom>
+				<ref-unite ref="ENSINBU6"></ref-unite>
+				<ref-unite ref="ENSINBU7"></ref-unite>
+			</bloc-unite>
+			<bloc-unite role="facultatif">
+				<nom>9 crédits à choisir</nom>
+				<ref-unite ref="ENSINBU8"></ref-unite>
+				<ref-unite ref="ENSINBU9"></ref-unite>
+				<ref-unite ref="ENSINBU10"></ref-unite>
+				<ref-unite ref="ENSINBU11"></ref-unite>
+				<ref-unite ref="ENSINBU12"></ref-unite>
+				<ref-unite ref="ENSINBU13"></ref-unite>
+				<ref-unite ref="ENSINBU16"></ref-unite>
+			</bloc-unite>
+		</semestre>
 	</parcours>
 	<parcours>
-		<responsable>Emmanuel GODARD</responsable>
+		<ref-responsable ref="godard"></ref-responsable>
 		<nom>Fiabilité et sécurité informatique</nom>
 		<description>La formation donne les principes et techniques liés à la conception de systèmes informatiques surs dans un environnement ouvert et hétérogène. Elle forme les étudiants aux principes et méthodes de développement modernes qui reposent sur des outils de prototypage, de test et de suivi de logiciels, avec des méthodologies normalisées. Elle apporte des compétences fortes en sécurité informatique dans les domaines liés à l'échange d'information (Web-services, protocoles de communication et cryptographiques,..) et à la communication entre systèmes (réseaux hétérogènes et applications embarquées ou distribuées).</description>
 		<debouche>Ingénieur études et développement</debouche>
 		<debouche>Responsable réseaux</debouche>
 		<debouche>Responsable systèmes et sécurité</debouche>
 		<debouche>Ingénieur qualité</debouche>
+		<semestre id="s3">
+			<bloc-unite role="obligatoire">
+				<nom>TC des parcours FSI et ISL</nom>
+				<ref-unite ref="ENSINCU27"></ref-unite>
+				<ref-unite ref="ENSINCU28"></ref-unite>
+				<ref-unite ref="ENSINCU29"></ref-unite>
+				<ref-unite ref="ENSINCU30"></ref-unite>
+				<ref-unite ref="ENSINCU31"></ref-unite>
+			</bloc-unite>
+			<bloc-unite role="facultatif">
+				<nom>Unité d'enseignement à bonus</nom>
+				<ref-unite ref="ENSINCU67"></ref-unite>
+			</bloc-unite>
+			<bloc-unite role="obligatoire">
+				<nom>Unités obligatoires</nom>
+				<ref-unite ref="ENSINCU32"></ref-unite>
+				<ref-unite ref="ENSINCU33"></ref-unite>
+				<ref-unite ref="ENSINCU34"></ref-unite>
+				<ref-unite ref="ENSINCU35"></ref-unite>
+			</bloc-unite>
+		</semestre>
+		<semestre id="s4">
+			<bloc-unite role="obligatoire">
+				<nom>Unités obligatoires</nom>
+				<ref-unite ref="ENSINDU3"></ref-unite>
+				<ref-unite ref="ENSINDU4"></ref-unite>
+			</bloc-unite>
+		</semestre>
 	</parcours>
-		<parcours>
-		<responsable>Jean-Luc MASSAT</responsable>
+	<!--<parcours>
+		<ref-responsable ref="massat"></ref-responsable>
 		<nom>Intégration de systèmes logiciels</nom>
 		<description>L'objectif de ce parcours est d'initier les étudiants à la conception et à la réalisation d'applications dans de tels cadres. La formation mettra plus particulièrement l'accent sur les notions d'architecture logicielle, de programmation par composants, de qualité et de fiabilité. Elle utilisera la plateforme Java Enterprise Edition pour concrétiser les concepts présentés.</description>
 		<debouche>Ingénieur études et développement</debouche>
 		<debouche>Architecte logiciel</debouche>
 		<debouche>Ingénieur en système d'information</debouche>
 		<debouche>Expert technique ou fonctionnel</debouche>
-	</parcours>
+	</parcours>-->
 </master>

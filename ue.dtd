@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!ELEMENT master		(unite+, intervenant+, parcours)>
+<!-- style -->
+<!ELEMENT p		(#PCDATA|b|i|a)*>
+<!ELEMENT b		(#PCDATA)>
+<!ELEMENT i		(#PCDATA)>
+<!ELEMENT a		(#PCDATA)>
+<!ELEMENT ul	(li+)>
+<!ELEMENT li	(#PCDATA)>
+<!ELEMENT table	(tr+)>
+<!ELEMENT tr	(td+)>
+<!ELEMENT td	(#PCDATA)>
+
+<!ATTLIST a		href	CDATA 	#REQUIRED>
+
+<!ENTITY % style "(#PCDATA|p|ul|table)*">
+<!-- /style -->
+
+<!ELEMENT master		(intervenant+, unite+, parcours+)>
 <!ELEMENT intervenant	(nom, mail, web)>
-<!ELEMENT parcours		(responsable+, nom, description, debouche+, semestre+)>
-<!ELEMENT semestre		(bloc-ue)>
+<!ELEMENT parcours		(ref-responsable+, nom, description, debouche+, semestre+)>
+<!ELEMENT semestre		(bloc-unite+)>
 <!ELEMENT unite			(nom, nbCredit, resume, plan, lieu, ref-intervenant+)>
-<!ELEMENT bloc-ue		(ref-unite+)>
+<!ELEMENT bloc-unite	(nom+, ref-unite+)>
 
 <!ELEMENT nom				(#PCDATA)>
 <!ELEMENT mail				(#PCDATA)>
 <!ELEMENT nbCredit			(#PCDATA)>
-<!ELEMENT resume			(#PCDATA)>
+<!ELEMENT resume			%style;>
 <!ELEMENT plan				(#PCDATA)>
 <!ELEMENT lieu				(#PCDATA)>
 <!ELEMENT web				(#PCDATA)>
 <!ELEMENT ref-intervenant 	(#PCDATA)>
 <!ELEMENT responsable	 	(#PCDATA)>
-<!ELEMENT description	 	(#PCDATA)>
+<!ELEMENT description	 	%style;>
 <!ELEMENT debouche		 	(#PCDATA)>
+<!ELEMENT ref-responsable 	(#PCDATA)>
+<!ELEMENT ref-unite		 	(#PCDATA)>
 
-<!ELEMENT p					(#PCDATA|(b|i|a)*)>
-<!ELEMENT b					(#PCDATA)>
-<!ELEMENT i					(#PCDATA)>
-<!ELEMENT a					(#PCDATA)>
-<!ELEMENT ul				(li+)>
-<!ELEMENT li				(#PCDATA)>
-<!ELEMENT table				(tr+)>
-<!ELEMENT tr				(td+)>
-<!ELEMENT td				(#PCDATA)>
-
-<!ATTLIST bloc-ue 			role 	(obligatoire | option)		#REQUIRED>
+<!ATTLIST bloc-unite		role 	(obligatoire | facultatif)		#REQUIRED>
 <!ATTLIST unite 			id 		ID 			#REQUIRED>
 <!ATTLIST intervenant 		id 		ID 			#REQUIRED>
-<!ATTLIST responsable		id 		ID	 		#REQUIRED><!-- voir -->
+<!ATTLIST semestre	 		id 		ID 			#REQUIRED>
 <!ATTLIST ref-intervenant 	ref 	IDREF 		#REQUIRED>
 <!ATTLIST ref-responsable	ref 	IDREF 		#REQUIRED><!-- voir -->
-<!ATTLIST ref-unite			ref 	IDREF 		#REQUIRED><!-- voir -->
-
-<!ATTLIST a		 			href	(#PCDATA) 	#REQUIRED>
+<!ATTLIST ref-unite			ref 	IDREF 		#REQUIRED>
 
 <!ENTITY luminy 		"Luminy">
 <!ENTITY stjerome 		"St-Jérôme">
