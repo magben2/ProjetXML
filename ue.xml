@@ -8,6 +8,12 @@
 		<mail>roland.agopian&mail.luminy;</mail>
 		<web></web>
 	</intervenant>
+
+	<intervenant id="arrighi">
+		<nom>Pablo Arrighi</nom>
+		<mail>pablo.arrighi&mail.luminy;</mail>
+		<web></web>
+	</intervenant>
 	
 	<intervenant id="bechet">
 		<nom>Frederic Bechet</nom>
@@ -227,85 +233,261 @@
 	</unite>
 	
 	<unite id="ENSINCU32">
-		<nom>Genie Logiciel</nom>
-		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
-		<plan></plan>
-		<lieu>Luminy</lieu>
-		
-		<ref-intervenant ref="novelli"></ref-intervenant>
-	</unite>
-	
-	<unite id="ENSINCU33">
-		<nom>Genie Logiciel</nom>
-		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
-		<plan></plan>
-		<lieu>Luminy</lieu>
-		
-		<ref-intervenant ref="novelli"></ref-intervenant>
-	</unite>
-	
-	<unite id="ENSINCU34">
 		<nom>Sécurité internet et réseau</nom>
 		<nbCredit>6</nbCredit>
 		<resume><p>Le cours aborde la sécurité de l'information sous deux aspects :</p>
 			<ul>
-				<li></li>
+				<li>Un volet organisationnel qui aborde la mise en place d'un système de management de la sécurité informatique à travers notamment l'étude des normes (ISO 27001, ISO 27002 ...) ou l'utilisation pratique de méthodes d'évaluation des besoins et des objectifs de sécurité</li>
+				<li>Un volet technique orienté sur l'acquisition des mécanismes cryptographiques actuels (algorithmes, protocoles ...) avec une mise en œuvre pratique (tunnels sécurisés, infrastructure de distribution de certificats...) ainsi que l'utilisation des outils de sécurité réseaux (journalisation, conformité …) en complément d'une sensibilisation pratique aux types d'attaque réellement existantes.</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>Connaissances fondamentales en utilisation et administration des systèmes d'exploitation de type serveurs (Microsoft, Linux)</li>
+			<ul>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="godard"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU33">
+		<nom>Fiabilité logicielle 2</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>La première partie du cours se divise en deux sections : la sécurité dans le langage Java et la sécurité dans les applications web.</p>
+			<p>Pour la première section, dans Java la sécurité revêt de nombreux aspects :</p>
+			<ul>
+				<li>les spécifications du langage disposent de fonctionnalités pour renforcer la sécurité du code, aussi bien lors de la phase de compilation que lors de la phase d'exécution</li>
+				<li>la plate-forme définit un modèle pour gérer les droits d'une application (applications locales ou applications téléchargées sur le réseau)</li>
+				<li>l'API JCE permet d'utiliser des technologies de cryptographie (cryptage/décryptage de données, génération de clés)</li>
+				<li>l'API JAAS propose un service pour gérer l'authentification et les autorisations d'un utilisateur</li>
+			</ul>
+			<p>Au niveau de la sécurité dans les applications web, on aborde différents notions liées à la sécurité, comme l'authentification, le contrôle d'accès, les vulnérabilités d'un système (ou risque d'attaques). On s'appuie notamment sur l'organisme Open Web Application Security Project (OWASP) qui établi un classement des problèmes des sécurité les plus critiques pour les applications web. Des solutions possibles sont analysées en cours, ainsi que de bonnes pratiques de développement pour limiter de telles failles de sécurité. Un exemple de vérification formelle automatique (basée sur des techniques de « model checking ») sur le protocole de sécurité Single-Sign-On est présenté.</p>
+			<p>La deuxième partie du cours s'articule autour des Critères Communs de Sécurité (CCS) qui ont pour objectif d'évaluer la sécurité des systèmes informatiques.</p>
+			<p>Les CCS mettent en place un standard de certification internationale et offrent un ensemble de recommandations précises pour analyser, développer, valider, maintenir et utiliser des systèmes informatiques.</p>
+			<p>En ce sens, ils proposent une méthode de support pour les développeurs, les évaluateurs et les utilisateurs finaux. Ils servent de base pour évaluer et déterminer le « degré de confiance » que l'on peut attribuer à un système ou à une application. En particulier, ils décrivent 7 niveaux d'évaluation et d'analyse de programmes.</p>
+			<p>Dans cette partie du cours, chaque niveau est passé en revue, de façon générale dans un premier temps, puis à travers un exemple de programme à vérifier. L'accent est surtout mis sur les niveaux les plus élevés, nécessitant une spécification formelle ou même une vérification formelle.</p>
+			<p>Dans le cours, l'objectif principal est de montrer qu'un programme est fiable par rapport aux spécifications initiale. Pour cela, le cours présente :</p>
+			<ul>
+				<li>le système de spécification formelle Z (notation mathématique basée sur la théorie des ensembles et sur la logique du premier ordre),</li>
+				<li>l'atelier de génie logiciel B (dont la notation Z est à l'origine ; les supports de Jean-Raymond Abrial sont utilisés dans un cours),</li>
+				<li>les différents systèmes de types qui existent et en particulier, un système de type évolué au travers du système Coq (basé sur la théorie du Calcul des Constructions qui est un lambda-calcul typé d'ordre supérieur).</li>
 			</ul>
 		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="massat"></ref-intervenant>
+	</unite>
+	
+	<unite id="ENSINCU34">
+		<nom>Qualité</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>Chapitre 1 : Introduction : Référentiels et Gestion de Service IT</p>
+			<ul>
+				<li>Concept de Service, La Gestion de Service et ITILv3, Processus, Rôles et Fonctions, Deming, Cycle de vie des Services</li>
+			</ul>
+			<p>Chapitre 2 : Stratégie des Services</p>
+			<ul>
+				<li>Définition de la Stratégie, Gestion du Portefeuille, Gestion de la Demande, Gestion Financière</li>
+			</ul>
+			<p>Chapitre 3 : Conception des Services</p>
+			<ul>
+				<li>Concepts, Gestion du Catalogue, Gestion des Niveaux de Service, Gestion de la Capacité, Gestion de la Disponibilité, Gestion de la Continuité, Gestion de la Sécurité, Gestion des Fournisseurs</li>
+			</ul>
+			<p>Chapitre 4 : Transition des Services</p>
+			<ul>
+				<li>Gestion des Actifs et des Configurations, Gestion des Changements, Gestion des Déploiements et des Mises en Production, Gestion de la Connaissance</li>
+			</ul>
+			<p>Chapitre 5 : Exploitation des Services</p>
+			<ul>
+				<li>Les Fonctions, Gestion des Evènements, Gestion des Incidents, Gestion des Requêtes, gestion des Problèmes, Gestion des Accès</li>
+			</ul>
+			<p>Chapitre 6 : Amélioration Continue des Services</p>
+			<ul>
+				<li>Processus d’amélioration en 7 étapes</li>
+			</ul>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="agopian"></ref-intervenant>
 	</unite>
 	
 	<unite id="ENSINCU35">
-		<nom>Genie Logiciel</nom>
-		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<nom>Sécurité des systèmes embarqués</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>But de ce module est de familiariser les étudiants avec les principes de la norme USB et de leur donner les moyens pour développer des pilotes USB côté hôte et côté périphérique. La norme USB étant vaste, on se concentrera sur deux classes particulières, les périphériques HID (human interface devise) et les périphériques CCID (circuit card interface devices, c'est-à-dire des lecteurs de cartes à puce sans et avec contact pour des applications de sécurité).</p>
+			<p>Contenu du cours :</p>
+			<ul>
+				<li>Introduction à USB : architecture matériel et logiciel, classes de périphériques, classes de transferts, nouveautés dans USB 3.0</li>
+				<li>Protocole de communication USB, détaillé, schéma de transactions, terminaisons, types de transfert ; descripteurs et énumérations</li>
+				<li>Détails de la classe classe HID : exemples simples (souris, clavier) et exemples plus complexes et applications</li>
+				<li>USB pratique coté périphérique : ce qu'il faut faire, comment utiliser les bibliothèques USB, ce qu'il faut ajouter, interruptions et threads.</li>
+				<li>USB pratique coté hôte (Linux) : ce qu'il faut faire, comment utiliser libusb, comment écrire des pilotes comme extensions de kernel, ...</li>
+				<li>Introduction aux smart cards et à la classe CCID.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="niebert"></ref-intervenant>
 	</unite>
 	
 	<unite id="ENSINDU3">
-		<nom>Genie Logiciel</nom>
+		<nom>Projet industriel de mise en application</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<resume>
+			<p>Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="massat"></ref-intervenant>
 	</unite>
 	
 	<unite id="ENSINDU4">
-		<nom>Genie Logiciel</nom>
+		<nom>Stage en entreprise</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<resume>
+			<p>Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="godard"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINCU36">
+		<nom>Administration système et réseau</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>L'objectif est de préparer les étudiants à l'administration d'un réseau d'ordinateurs. L'accent sera mis sur les aspects pratiques et concrets de l'administration d'un réseau d'entreprise pour les systèmes UNIX et Windows. A ce titre, une maquette constituée de plusieurs serveurs et stations sous Windows 2000/XP/Linux sera montée par les étudiants.</p>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="godard"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINCU37">
+		<nom>Méthodes de développement</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>En cours, sont vus les éléments suivants :</p>
+			<ul>
+				<li>Les problématiques d'un développement pérenne (principes, cycle de développement, méthodologies)</li>
+				<li>Rappels d'UML : principaux diagrammes (classes, activités, cas, séquences), représentation, études de cas</li>
+				<li>Les design patterns en profondeur (description détaillée des 26 patterns, étude de cas)</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>Experience de programmation dans d'autres langages que Java</li>
+				<li>Création/utilisation d'un design pattern</li>
+				<li>Modélisation MVC</li>
+			</ul>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="agopian"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINCU38">
+		<nom>Architecture logicielle JEE</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>L'objet du cours est de présenter l'architecture et le développement d'applications dans le cadre de la plateforme JEE ( Java Enterprise Edition ). Ce cours prend la suite d'un premier cours de 30 heures sur JEE. Nous étudions notamment : </p>
+			<ul>
+				<li>la maîtrise des Enterprise Java Bean qui sont les composantes métier de la plateforme JEE,</li>
+				<li>le couplage entre EJB et base de données relationnelle pour la manipulation des données métier ( Java Persistance API ),</li>
+				<li>l'architecture MVC des applications Web avec Spring MVC et Struts,</li>
+				<li>les principes de sécurisation des applications Web</li>
+				<li>les technologies JSF (Java Server Faces) et GWT (Google Web Toolkit) pour la réalisation d'applications Web riches,</li>
+				<li>les techniques de conception et de réalisation des Web Services (SOAP, XML-RPC, WSDL).</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>XML / XPATH / XSLT</li>
+				<li>Technologies du Web ((X)HTML, CSS, Javascript)</li>
+			</ul>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="massat"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINCU39">
+		<nom>Intégration des données</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<p>Ce cours est structuré en trois parties :</p>
+			<ul>
+				<li>Le modèle Relationnel-Objet : La norme SQL3, l’implantation dans le SGBD Oracle</li>
+				<li>XML et les bases de données : Stockage en base, les fonctions SQLXML</li>
+				<li>La correspondance Objet/Relationnel : Le standard JPA, l’implantation Hibernate</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>Bonne connaissance des bases de données relationnelles</li>
+			</ul>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="agopian"></ref-intervenant>
+	</unite>
+
+	<unite id="ENSINCU40">
+		<nom>Administration et alimentation de BD</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<ul>
+				<li>Architecture d’un SGBD.</li>
+				<li>Création, Confidentialité, Optimisation et Sécurité d’une base de données.</li>
+				<li>Migration de bases de données : techniques usuelles, maintenance de l’inter-dépendance entre bases de données.</li>
+				<li>Alimentation, nettoyage et sélection des données en vue d'analyses.</li>
+				<li>Logiciels possible : ORACLE, Pentaho Data Integration.</li>
+			</ul>
+		</resume>
+		<plan></plan>
+		<lieu>Luminy</lieu>
+		
+		<ref-intervenant ref="sabatier"></ref-intervenant>
 	</unite>
 
 	<unite id="ENSINAU1">
 		<nom>Genie Logiciel</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<resume>
+			<ul>
+				<li>Processus logiciel</li>
+				<li>Gestion de projet</li>
+				<li>Spécification et conception</li>
+				<li>Design patterns</li>
+			</ul>
+			</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="arrighi"></ref-intervenant>
 	</unite>
 
 	<unite id="ENSINAU2">
 		<nom>Complexité</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.
-		Classes P et NP. Problèmes NP-complets
-		Méthodes de résolution des problèmes NP-Complets.</resume>
+		<resume>
+			<ul>
+				<li>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.</li>
+				<li>Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.</li>
+				<li>Classes P et NP. Problèmes NP-complets</li>
+				<li>Méthodes de résolution des problèmes NP-Complets.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -315,7 +497,19 @@
 	<unite id="ENSINAU3">
 		<nom>Réseaux</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Architecture en couches, standard OSI</resume>
+		<resume>
+			<ul>
+				<li>Architecture en couches, standard OSI</li>
+				<li>Couche physique</li>
+				<li>Couche liaison de Données</li>
+				<li>Réseau IP</li>
+				<li>Algorithmes de routage, routage IP</li>
+				<li>Protocole TCP/IP</li>
+				<li>Couche Application : HTTP, SMTP, FTP, ...</li>
+				<li>Bases des protocoles cryptographiques (terminologie, architecture à clef publique).</li>
+				<li>Introduction à la Sécurité des réseaux.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -325,7 +519,30 @@
 	<unite id="ENSINAU4">
 		<nom>Programmation fonctionnelle</nom>
 		<nbCredit>3</nbCredit>
-		<resume> Introduction à la programmation fonctionnelle, sur l'exemple du langage</resume>
+		<resume> 
+			<p>1 - Introduction à la programmation fonctionnelle, sur l'exemple du langage</p>
+			<ul>
+				<li>OCaml</li>
+				<li>Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.</li>
+				<li>Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.</li>
+			</ul>
+			<p>2 - Les types</p>
+			<ul>
+				<li>Sommes, types récursifs, polymorphes. Arbres. Filtrage.</li>
+			</ul>
+			<p>3- Sémantique opérationnelle</p>
+			<ul>
+				<li>Liaisons, environnements, clôtures. Évaluation des fonctions récursives.</li>
+			</ul>
+			<p>4- Aspects impératifs</p>
+			<ul>
+				<li>Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.</li>
+			</ul>
+			<p>5- Implantation du filtrage en OCaml</p>
+			<ul>
+				<li>Termes formels, substitutions, filtrage.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -335,7 +552,7 @@
 	<unite id="ENSINAU12">
 		<nom>BDRa</nom>
 		<nbCredit>3</nbCredit>
-		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
+		<resume><p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p></resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -345,7 +562,14 @@
 	<unite id="ENSINAU6">
 		<nom>Programmation logique</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.</resume>
+		<resume>
+			<ul>
+				<li>Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.</li>
+				<li>Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.</li>
+				<li>Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.</li>
+				<li>Règles prédéfinies.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -355,7 +579,16 @@
 	<unite id="ENSINAU7">
 		<nom>Outils de l'internet</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Présentation d'Internet</resume>
+		<resume>
+			<ul>
+				<li>Présentation d'Internet</li>
+				<li>Les langages et les normes sur Internet.</li>
+				<li>Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3</li>
+				<li>Les applications web.</li>
+				<li>Sécurité.</li>
+				<li>Les nouvelles et futures technologies.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -365,7 +598,7 @@
 	<unite id="ENSINAU8">
 		<nom>Système embarqué</nom>
 		<nbCredit>3</nbCredit>
-		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
+		<resume><p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p></resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -375,7 +608,13 @@
 	<unite id="ENSINAU9">
 		<nom>Fondamentaux pour l'ingénierie des langues</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Algorithmes d'analyse syntaxique pour grammaires ambiguës</resume>
+		<resume>
+			<ul>
+				<li>Rappel de théorie des langages</li>
+				<li>Algorithmes d'analyse syntaxique pour grammaires ambiguës</li>
+				<li>Transducteurs finis et leur application en TAL</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -385,7 +624,10 @@
 	<unite id="ENSINAU10">
 		<nom>Modèles à évènements discrets</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de Pétri.</resume>
+		<resume>
+			<p>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de Pétri.</p>
+			<p>Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -395,7 +637,7 @@
 	<unite id="ENSINAU13">
 		<nom>Pratique de la cryptographie</nom>
 		<nbCredit>3</nbCredit>
-		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé.</resume>
+		<resume><p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p></resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -406,7 +648,9 @@
 	<unite id="ENSINBU1">
 		<nom>Anglais</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</resume>
+		<resume>
+			<p>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -416,7 +660,28 @@
 	<unite id="ENSINBU2">
 		<nom>Communication</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Notions de management et de travail collaboratif</resume>
+		<resume>
+			<p>Chapitre 1  : Théories de la communication :</p>
+			<ul>
+				<li>1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)</li>
+				<li>1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)</li>
+			</ul>
+			<p>Chapitre 2 : Rôle de l’interculturalité dans le travail en équipe :</p>
+			<ul>
+				<li>2.1 L’enquête interculturelle de Hofstede pour IBM</li>
+				<li>2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall)</li>
+			</ul>
+			<p>Chapitre 3 : Notions de management et de travail collaboratif</p>
+			<ul>
+				<li>3.1 Le travail collaboratif vs le travail coopératif</li>
+				<li>3.2 La notion de groupes</li>
+				<li>3.3 Les compétences managériales</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -426,7 +691,12 @@
 	<unite id="ENSINBU4">
 		<nom>XML</nom>
 		<nbCredit>3</nbCredit>
-		<resume>XML, DTD, XSD</resume>
+		<resume>
+			<ul>
+				<li>XML, DTD, XSD</li>
+				<li>XPath, XSLT, XQuery</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -436,7 +706,15 @@
 	<unite id="ENSINBU5">
 		<nom>Algorithmique et recherche opérationnelle</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Programmation linéaire</resume>
+		<resume>
+			<ul>
+				<li>Programmation linéaire</li>
+				<li>Notions et algorithmes de flots.</li>
+				<li>Applications (couplage, affectation, transport, ...)</li>
+				<li>Programmation dynamique (sac à dos, ordonnancement, ...)</li>
+				<li>Algorithmes à performance garantie</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -446,7 +724,7 @@
 	<unite id="ENSINBU15">
 		<nom>Programmation parallèle</nom>
 		<nbCredit>3</nbCredit>
-		<resume>nous sommes désolé, mais nous n'avons pas encore de résumé</resume>
+		<resume><p>nous sommes désolé, mais nous n'avons pas encore de résumé</p></resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -456,7 +734,9 @@
 	<unite id="ENSINBU6">
 		<nom>Projet</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
+		<resume>
+			<p>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -466,7 +746,9 @@
 	<unite id="ENSINBU7">
 		<nom>Stage de deux mois</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
+		<resume>
+			<p>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -476,7 +758,23 @@
 	<unite id="ENSINBU8">
 		<nom>Sémantique</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Le lambda-calcul simplement typé</resume>
+		<resume>
+			<p>1 - Le lambda-calcul simplement typé</p>
+			<ul>
+				<li>Syntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.</li>
+			</ul>
+			<p>2-Extension à PCF. La règle \mu.</p>
+			<p>3-Points fixes dans les ordres partiels complets.</p>
+			<ul>
+				<li>Le théorème de Tarski.</li>
+			</ul>
+			<p>4 - Sémantique par point fixe de PCF.</p>
+			<p>5 - Cours de clôture : survol des différentes approches sémantiques.</p>
+			<ul>
+				<li>Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de Landin.</li>
+				<li>Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -486,7 +784,9 @@
 	<unite id="ENSINBU9">
 		<nom>Algorithmique distribuée</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</resume>
+		<resume>
+			<p>Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -496,7 +796,14 @@
 	<unite id="ENSINBU10">
 		<nom>Intégration des systèmes d'information</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Problématique d'intégration des SI</resume>
+		<resume>
+			<ul>
+				<li>Problématique d'intégration des SI</li>
+				<li>Architectures et patrons d'intégration</li>
+				<li>Systèmes d'Information d'entreprises</li>
+				<li>Systèmes d'Information sur Internet</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -506,7 +813,10 @@
 	<unite id="ENSINBU11">
 		<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 		<nbCredit>3</nbCredit>
-		<resume><p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</p><p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p></resume>
+		<resume>
+			<p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</p>
+			<p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -516,7 +826,16 @@
 	<unite id="ENSINBU12">
 		<nom>Intelligence artificielle</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Introduction à l'IA</resume>
+		<resume>
+			<ul>
+				<li>Introduction à l'IA</li>
+				<li>Problèmes d'espace d'états et d'exploration</li>
+				<li>Logiques pour l'IA et démonstration automatique</li>
+				<li>Représentation de connaissances</li>
+				<li>Actions, temps et planification</li>
+				<li>Programmation par contraintes et réseaux de contraintes</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -526,7 +845,17 @@
 	<unite id="ENSINBU13">
 		<nom>Algorithme à performance garantie</nom>
 		<nbCredit>3</nbCredit>
-		<resume>Algorithmes d'approximation de nature combinatoire pour les problèmes</resume>
+		<resume>
+			<ul>
+				<li>Algorithmes d'approximation de nature combinatoire pour les problèmes</li>
+			</ul>
+			<p>NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune.</p>
+			<ul>
+				<li>FPTAS et PTAS (ordonnancement de taches et sac à dos)</li>
+				<li>Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres)</li>
+				<li>Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -547,7 +876,9 @@
 	<parcours>
 		<ref-responsable ref="morin"></ref-responsable>
 		<nom>M1</nom>
-		<description>L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</description>
+		<description>
+			<p>L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</p>
+		</description>
 		<debouche>Recherche</debouche>
 		<debouche>Professionel</debouche>
 		<semestre id="s1">
