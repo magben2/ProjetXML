@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE master SYSTEM "ue.dtd">
+<?xml-stylesheet type="text/xsl" href= "ue.xsl" ?>
 
 <master>
 	<intervenant id="agopian">
@@ -139,43 +140,90 @@
 	</unite>
 	
 	<unite id="ENSINCU29">
-		<nom>Genie Logiciel</nom>
-		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<nom>Fiabilité logicielle 1</nom>
+		<nbCredit>3</nbCredit>
+		<resume>
+			<ul>
+				<li>Introduction fiabilité vs sécurité</li>
+				<li>Test boite blanche (graphe de contrôle, de donnée, mesure de couverture, modèle à base d'automates, qualité logicielle)</li>
+				<li>Test boite noire (spécifications formelle informelles, construction de suite de tests : partitionnement, tests au limites, tests combinatoires, graphe de causalité)</li>
+				<li>Test et Simulation (Objets factices, inversion de contrôle, intégration)</li>
+				<li>Validation Formelle (système de preuves : Hoare, logique de séparation, analyse statique)</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>Environnement de programmation Eclipse</li>
+				<li>Java</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="massat"></ref-intervenant>
 	</unite>
 	
 	<unite id="ENSINCU30">
-		<nom>Genie Logiciel</nom>
-		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<nom>Plateforme JEE</nom>
+		<nbCredit>3</nbCredit>
+		<resume><p>L'objet du cours est de présenter le développement d'applications dans le cadre de la plateforme JEE ( Java Enterprise Edition ). Nous étudions notamment</p>
+			<p>Accès aux ressources extérieures :</p>
+			<ul>
+				<li>les interfaces java d'accès aux bases de données relationnelles (JDBC),</li>
+				<li>les interfaces d'accès aux annuaires d'entreprise (LDAP, JNDI)</li>
+			</ul>
+			<p> Mise en place d'une couche métier (middleware) :</p>
+			<ul>
+				<li>les architectures logicielles à base de composants (EJB, Spring, Jboss, Glassfish) et les principes de mise en œuvre (spécification/implantation, injection de dépendances et inversion de contrôle),</li>
+				<li>l'architecture des applications 3-tiers,</li>
+			</ul>
+			<p>Couche de présentation et interfaces Web :</p>
+			<ul>
+				<li>les technologies de mise en œuvre des applications WEB (Servlet, JSP, Tomcat, Glassfish).</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>XML / XPATH / XSLT</li>
+				<li>Technologies du Web ((X)HTML, CSS, Javascript)</li>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="massat"></ref-intervenant>
 	</unite>
 	
 	<unite id="ENSINCU31">
-		<nom>Genie Logiciel</nom>
-		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<nom>Systèmes hétérogènes</nom>
+		<nbCredit>3</nbCredit>
+		<resume><p>Les parties magistrales de l'enseignement seront l'occasion d'aborder notamment les aspects suivants :</p>
+			<ul>
+				<li>Introduction aux métiers et organisation des Systèmes d'Information (DSI, AMO, MOE, architectes, exploitants...)</li>
+				<li>Introduction aux stratégies d'entreprises autour de leurs systèmes d'information (plan de continuité d'activité, plan de reprise d'activité, plan de continuité informatique...)</li>
+				<li>Introduction à la conception et à l'évolution de systèmes d'information (recueil et analyse de l'existant, des besoins et contraintes, scénarii, rédaction de cahier des charges...)
+</li>
+				<li>Découvertes des technologies liées à la disponibilité et haute disponibilité des données informatiques (réseaux de stockage - SAN, NAS -, virtualisation...)</li>
+				<li>Découverte des architectures de disponibilité et haute disponibilité des SI (analyse des besoins, conception, cloud computing...)</li>
+				<li>Approfondissement des savoirs autour des réseaux de transferts de données d'entreprises (routage, réseaux privés virtuels...)</li>
+				<li>Découverte des infrastructures de services des réseaux de données</li>
+			</ul>
+			<p><b>Pre-Requis</b></p>
+			<ul>
+				<li>Connaissances fondamentales en utilisation et administration des systèmes d'exploitation de type serveurs (Microsoft, Linux).</li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="agopian"></ref-intervenant>
 	</unite>
 	
 	<unite id="ENSINCU67">
-		<nom>Genie Logiciel</nom>
-		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<nom>Projet d'entreprise</nom>
+		<nbCredit>3</nbCredit>
+		<resume><p>L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.</p></resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="novelli"></ref-intervenant>
+		<ref-intervenant ref="godard"></ref-intervenant>
 	</unite>
 	
 	<unite id="ENSINCU32">
@@ -199,9 +247,13 @@
 	</unite>
 	
 	<unite id="ENSINCU34">
-		<nom>Genie Logiciel</nom>
+		<nom>Sécurité internet et réseau</nom>
 		<nbCredit>6</nbCredit>
-		<resume>Processus logiciel, Gestion de projet, Spécification et conception, Design patterns</resume>
+		<resume><p>Le cours aborde la sécurité de l'information sous deux aspects :</p>
+			<ul>
+				<li></li>
+			</ul>
+		</resume>
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
@@ -388,7 +440,7 @@
 		<plan></plan>
 		<lieu>Luminy</lieu>
 		
-		<ref-intervenant ref="cepoi"></ref-intervenant>
+		<ref-intervenant ref="chepoi"></ref-intervenant>
 	</unite>
 
 	<unite id="ENSINBU15">
