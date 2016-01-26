@@ -11,7 +11,9 @@
         doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
         indent="yes" />
         <!-- remplacer la DTD par une DTD XHTML strict -->
-
+	
+	<xsl:key name="trouverIntervenant" match="master/intervenant" use="@id"/>
+	
 	<xsl:template match="/">
 		<html>
 			<head>
@@ -53,7 +55,7 @@
 	<xsl:template name="liste-des-unites">
 		<xsl:for-each select="master/unite">
 	        <xsl:call-template name="afficherUnite" />
-		</xsl:for-each>	
+		</xsl:for-each>
 	</xsl:template>
 	
 	<xsl:template name="liste-des-intervenants">
@@ -74,6 +76,9 @@
     		<!-- ne pas oublier d'enlever le "string" du select -->
     		<br />
     		Lieu : <xsl:value-of select="lieu"/>
+    		<xsl:for-each select="ref-intervenant">
+    			<xsl:call-template name="afficherRefIntervenant"/>
+	    	</xsl:for-each>	
     	</p>
 	</xsl:template>
 	
@@ -85,5 +90,15 @@
     		<br />
     		Mail : <xsl:value-of select="mail"/>
     	</p>
+	</xsl:template>
+
+	<xsl:template name="afficherRefIntervenant">
+		<xsl:variable name="ref" select="@ref" />
+		<xsl:variable name="intervenant" select="key('trouverIntervenant','$ref')" />
+		
+		<ul>
+			<li><a href="#{$ref}"><xsl:value-of select="$intervenant"/></a></li>
+			<!-- ajouter nom intervenant en utilisant xpath -->
+		</ul>
 	</xsl:template>
 </xsl:stylesheet>
