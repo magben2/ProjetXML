@@ -927,7 +927,7 @@
 			</bloc-unite>
 		</semestre>
 	</parcours>
-	<parcours id="FSI">
+	<parcours>
 		<ref-responsable ref="godard"></ref-responsable>
 		<nom>Fiabilité et sécurité informatique</nom>
 		<description>La formation donne les principes et techniques liés à la conception de systèmes informatiques surs dans un environnement ouvert et hétérogène. Elle forme les étudiants aux principes et méthodes de développement modernes qui reposent sur des outils de prototypage, de test et de suivi de logiciels, avec des méthodologies normalisées. Elle apporte des compétences fortes en sécurité informatique dans les domaines liés à l'échange d'information (Web-services, protocoles de communication et cryptographiques,..) et à la communication entre systèmes (réseaux hétérogènes et applications embarquées ou distribuées).</description>

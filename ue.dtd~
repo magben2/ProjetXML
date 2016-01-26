@@ -37,7 +37,7 @@
 <!ELEMENT ref-responsable 	(#PCDATA)>
 <!ELEMENT ref-unite		 	(#PCDATA)>
 
-<!ATTLIST bloc-unite		role 	(obligatoire | bonus | option)		#REQUIRED>
+<!ATTLIST bloc-unite		role 	(obligatoire | bonus)		#REQUIRED>
 <!ATTLIST unite 			id 		ID 			#REQUIRED>
 <!ATTLIST intervenant 		id 		ID 			#REQUIRED>
 <!ATTLIST semestre	 		id 		ID 			#REQUIRED>
