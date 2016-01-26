@@ -891,7 +891,7 @@
 				<ref-unite ref="ENSINAU4"></ref-unite>
 				<ref-unite ref="ENSINAU12"></ref-unite>
 			</bloc-unite>
-			<bloc-unite role="facultatif">
+			<bloc-unite role="option">
 				<nom>6 crédits à choisir</nom>
 				<ref-unite ref="ENSINAU6"></ref-unite>
 				<ref-unite ref="ENSINAU7"></ref-unite>
@@ -910,12 +910,12 @@
 				<ref-unite ref="ENSINBU5"></ref-unite>
 				<ref-unite ref="ENSINBU15"></ref-unite>
 			</bloc-unite>
-			<bloc-unite role="facultatif">
+			<bloc-unite role="option">
 				<nom>6 crédits à choisir</nom>
 				<ref-unite ref="ENSINBU6"></ref-unite>
 				<ref-unite ref="ENSINBU7"></ref-unite>
 			</bloc-unite>
-			<bloc-unite role="facultatif">
+			<bloc-unite role="option">
 				<nom>9 crédits à choisir</nom>
 				<ref-unite ref="ENSINBU8"></ref-unite>
 				<ref-unite ref="ENSINBU9"></ref-unite>
@@ -944,7 +944,7 @@
 				<ref-unite ref="ENSINCU30"></ref-unite>
 				<ref-unite ref="ENSINCU31"></ref-unite>
 			</bloc-unite>
-			<bloc-unite role="facultatif">
+			<bloc-unite role="bonus">
 				<nom>Unité d'enseignement à bonus</nom>
 				<ref-unite ref="ENSINCU67"></ref-unite>
 			</bloc-unite>
@@ -964,13 +964,56 @@
 			</bloc-unite>
 		</semestre>
 	</parcours>
-	<!--<parcours>
+
+	<parcours id="ISL">
 		<ref-responsable ref="massat"></ref-responsable>
 		<nom>Intégration de systèmes logiciels</nom>
-		<description>L'objectif de ce parcours est d'initier les étudiants à la conception et à la réalisation d'applications dans de tels cadres. La formation mettra plus particulièrement l'accent sur les notions d'architecture logicielle, de programmation par composants, de qualité et de fiabilité. Elle utilisera la plateforme Java Enterprise Edition pour concrétiser les concepts présentés.</description>
+		<description>
+			<p>Le développement de l'Internet/Intranet et des applications associées a fait émerger de nouvelles normes pour la structuration des applications informatiques réparties. L'enjeu est de présenter des modèles (programmation par composants, par aspects, design pattern), des plateformes (JEE, .NET, Corba, etc.) et des outils (JAVA, SGBDOO, XML) qui offrent un cadre dans lequel les applications sont développées, validées et intégrées plus facilement.</p>
+			<p>L'objectif de ce parcours est d'initier les étudiants à la conception et à la réalisation d'applications dans de tels cadres. La formation mettra plus particulièrement l'accent sur les notions d'architecture logicielle, de programmation par composants, de qualité et de fiabilité. Elle utilisera la plateforme Java Enterprise Edition pour concrétiser les concepts présentés.</p>
+			<p><b>Compétences à acquérir</b></p>
+			<ul>
+				<li>spécifier, concevoir, réaliser et déployer des applications réparties</li>
+				<li>proposer des architectures informatiques complexes</li>
+				<li>mettre en œuvre des plateformes informatiques professionnelles (JEE, frameworks, etc.)</li>
+				<li>synthétiser et présenter une problématique métier (CdC, spécifications, recette, politique de test)</li>
+				<li>communiquer en Anglais et en Français</li>
+			</ul>
+			<p><b>Connaissances à acquérir</b></p>
+			<p>L'objectif de la spécialité FSIL est de former des étudiants afin qu'ils puissent concevoir, réaliser, valider et mettre en exploitation des logiciels. Pour ce faire, ils devront connaître les concepts, les outils et les méthodes liés au développement de logiciels. Les aspects de qualité, de sécurité et de bonne intégration dans des environnements informatiques complexes seront les points forts de la formation.</p>
+		</description>
 		<debouche>Ingénieur études et développement</debouche>
 		<debouche>Architecte logiciel</debouche>
 		<debouche>Ingénieur en système d'information</debouche>
 		<debouche>Expert technique ou fonctionnel</debouche>
-	</parcours>-->
+		<semestre id="s3">
+			<bloc-unite role="obligatoire">
+				<nom>TC des parcours FSI et ISL</nom>
+				<ref-unite ref="ENSINCU27"></ref-unite>
+				<ref-unite ref="ENSINCU28"></ref-unite>
+				<ref-unite ref="ENSINCU29"></ref-unite>
+				<ref-unite ref="ENSINCU30"></ref-unite>
+				<ref-unite ref="ENSINCU31"></ref-unite>
+			</bloc-unite>
+			<bloc-unite role="bonus">
+				<nom>Unité d'enseignement à bonus</nom>
+				<ref-unite ref="ENSINCU67"></ref-unite>
+			</bloc-unite>
+			<bloc-unite role="obligatoire">
+				<nom>Unités obligatoires</nom>
+				<ref-unite ref="ENSINCU36"></ref-unite>
+				<ref-unite ref="ENSINCU37"></ref-unite>
+				<ref-unite ref="ENSINCU38"></ref-unite>
+				<ref-unite ref="ENSINCU39"></ref-unite>
+				<ref-unite ref="ENSINCU40"></ref-unite>
+			</bloc-unite>
+		</semestre>
+		<semestre id="s4">
+			<bloc-unite role="obligatoire">
+				<nom>Unités obligatoires</nom>
+				<ref-unite ref="ENSINDU3"></ref-unite>
+				<ref-unite ref="ENSINDU4"></ref-unite>
+			</bloc-unite>
+		</semestre>
+	</parcours>
 </master>
