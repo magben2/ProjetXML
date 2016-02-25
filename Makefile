@@ -5,26 +5,26 @@ LINT = xmllint --noout
 all: clean gen dtd xsd web xq tidy java
 
 
-gen: ue.xsl ue.xml
+gen: donnees-to-xml.xsl donnees-master.xml
 	@echo "\nConstruction du fichier de données XML"
-	$(XSLT) ue.xsl ue.xml
-				
-					
-dtd: ue.xml ue.dtd
-	@echo "\nValidation de la DTD"
-	$(LINT) --valid ue.xml
+	$(XSLT) donnees-to-xml.xsl donnees-master.xml
+	
+	
+dtd: master-gen.xml master-dtd.dtd
+	@echo "\nValidation avec la DTD"
+	$(LINT) --valid  master-gen.xml
 
 
-xsd: ue.xml ue.xsd
-	@echo "\nValidation du schema"
-	$(LINT) --schema ue.xsd ue.xml
-				
+xsd: master-gen.xml master-schema.xsd
+	@echo "\nValidation avec le schema"
+	$(LINT) --schema  master-schema.xsd master-gen.xml
+	
 
-web: ue.xml ue.xsl
+web: master-gen.xml master-stylesheet.xsl
 	@echo "\nGénération du dossier www/"
-	$(XSLT) ue.xsl ue.xml
-				
-					
+	$(XSLT) master-stylesheet.xsl master-gen.xml
+	
+	
 tidy:
 	@echo "\nValidation des fichiers www./*.html"
 	tidy -ascii -imqe -asxhtml www/*.html
@@ -50,3 +50,5 @@ clean:
 	rm -rf www/
 	rm -rf dom.txt
 	rm -rf *.class
+
+
