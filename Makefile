@@ -23,8 +23,8 @@ xsd:
 web:
 	@echo "\nGénération du dossier www/"
 	$(XSLT) xsl/master.xsl master-gen.xml
-	cp documentation.html www/documentation.html
 	cp -r css www/css
+	cp -r img www/img
 	
 	
 tidy:

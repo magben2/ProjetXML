@@ -6,6 +6,7 @@
  */
 body {
     color: #333;
+    background: #E4F1FE;
 }
 
 
@@ -49,12 +50,16 @@ a {
     padding: 0;
 }
 
+#list {
+	background: white;
+}
+
 /* Make the navigation 100% width on phones */
 #nav {
     width: 100%;
     height: 40px;
     position: relative;
-    background: rgb(37, 42, 58);
+    background: rgb(40, 70, 100);
     text-align: center;
 }
 /* Show the "Menu" button on phones */
@@ -90,21 +95,73 @@ a {
     border: none;
     text-align: left;
 }
-    #nav .pure-menu-link:hover,
-    #nav .pure-menu-link:focus {
-        background: rgb(55, 60, 90);
-    }
-    #nav .pure-menu-link {
-        color: #fff;
-        margin-left: 0.5em;
-    }
-    #nav .pure-menu-heading {
-    	margin-top: 10px;
-        border-bottom: none;
-        font-size:110%;
-        color: rgb(75, 113, 151);
-    }
+#nav .pure-menu-link:hover,
+#nav .pure-menu-link:focus {
+    background: rgb(55, 60, 90);
+}
+#nav .pure-menu-link {
+    color: #fff;
+    margin-left: 0.5em;
+}
+#nav .pure-menu-heading {
+	margin-top: 10px;
+    border-bottom: none;
+    font-size:110%;
+    color: white;
+    font-weight: bold;
+}
+/* Make the navigation 100% width on phones */
+#nav-index {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: rgb(40, 70, 100);
+    text-align: center;
+}
+/* Show the "Menu" button on phones */
+#nav-index .nav-menu-button {
+    display: block;
+    top: 0.5em;
+    right: 0.5em;
+    position: absolute;
+}
 
+/* When "Menu" is clicked, the navbar should be 80% height */
+#nav-index.active {
+    height: 80%;
+}
+
+/* ...until the "Menu" button is clicked */
+#nav-index.active .nav-inner {
+    display: block;
+    padding: 2em 0;
+}
+
+
+/*
+ * -- NAV BAR STYLES --
+ * Styling the default .pure-menu to look a little more unique.
+ */
+#nav-index .pure-menu {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+#nav-index .pure-menu-link:hover,
+#nav-index .pure-menu-link:focus {
+    background: rgb(55, 60, 90);
+}
+#nav-index .pure-menu-link {
+    color: #fff;
+    margin-left: 0.5em;
+}
+#nav-index .pure-menu-heading {
+	margin-top: 10px;
+    border-bottom: none;
+    font-size:110%;
+    color: white;
+    font-weight: bold;
+}
 
 /*
  * -- EMAIL STYLES --
@@ -150,7 +207,7 @@ a {
 }
 .email-name {
     text-transform: uppercase;
-    color: #999;
+    color: grey;
 }
 .email-desc {
     font-size: 80%;
@@ -168,34 +225,40 @@ a {
 .email-content-header, .email-content-body, .email-content-footer {
     padding: 1em 2em;
 }
-    .email-content-header {
-        border-bottom: 1px solid #ddd;
-    }
+.email-content-header {
+    border-bottom: 1px solid #ddd;
+}
 
-        .email-content-title {
-            margin: 0.5em 0 0;
-        }
-        .email-content-subtitle {
-            font-size: 1em;
-            margin: 0;
-            font-weight: normal;
-        }
-            .email-content-subtitle span {
-                color: #999;
-            }
-    .email-content-controls {
-        margin-top: 2em;
-        text-align: right;
-    }
-        .email-content-controls .secondary-button {
-            margin-bottom: 0.3em;
-        }
+.email-content-title {
+    margin: 0.5em 0 0;
+}
+.email-content-subtitle {
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
+.email-content-subtitle span {
+    color: #999;
+}
+.email-content-controls {
+    margin-top: 2em;
+    text-align: right;
+}
+.email-content-controls .secondary-button {
+    margin-bottom: 0.3em;
+}
 
-    .email-avatar {
-        width: 40px;
-        height: 40px;
-    }
+.email-avatar {
+    width: 40px;
+    height: 40px;
+}
 
+#nav img {
+	display: none;
+}
+#nav-index img {
+	display: none;
+}
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -204,9 +267,25 @@ a {
  */
 @media (min-width: 40em) {
 
+	#bottom {
+		position: fixed;
+		bottom: 0px;
+	}
+	#nav img {
+		display: block;
+	}
+	#nav-index img {
+		display: block;
+	}
+
     /* Move the layout over so we can fit the nav + list in on the left */
     #layout {
         padding-left:600px; /* "left col (nav + list)" width */
+        position: relative;
+    }
+
+    #layout-index {
+        padding-left:450px; /* "left col (nav + list)" width */
         position: relative;
     }
 
@@ -222,6 +301,15 @@ a {
         width:250px;
         height: 100%;
     }
+    #nav-index {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+        margin-left:-450px; /* "left col (nav + list)" width */
+        width:250px;
+        height: 100%;
+    }
 
     /* Show the menu items on the larger screen */
     .nav-inner {
@@ -231,6 +319,10 @@ a {
 
     /* Hide the "Menu" button on larger screens */
     #nav .nav-menu-button {
+        display: none;
+    }
+
+    #nav-index .nav-menu-button {
         display: none;
     }
 
@@ -244,6 +336,16 @@ a {
     #main {
         position: fixed;
         top: 33%;
+        right: 0;
+        bottom: 0;
+        left: 250px;
+        overflow: auto;
+        width: auto; /* so that it's not 100% */
+    }
+
+    #main-index {
+        position: fixed;
+        top: 0;
         right: 0;
         bottom: 0;
         left: 250px;
@@ -273,6 +375,13 @@ a {
         position: static;
         margin: 0;
         padding: 0;
+    }
+
+    #main-index {
+        position: static;
+        margin: 0;
+        padding: 0;
+    	margin-left: -200px;
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <xsl:stylesheet version="1.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
 
 	<xsl:template name="head">
 		<xsl:param name="title" />
@@ -15,7 +15,12 @@
 
 	<xsl:template name="menu">
 		<xsl:param name="title" />
-		<div id="nav" class="pure-u">
+		<xsl:param name="id-nav" />
+		<div id="nav{$id-nav}" class="pure-u">
+			<a href="index.html">
+				<img src="img/logo-sciences-white.png" alt="Aix-Marseille Université" style="width: 100%;"/>
+			</a>
+
 	        <a href="#" class="nav-menu-button">Menu</a>
 
 	        <div class="nav-inner">
@@ -40,7 +45,7 @@
 	                    	<a href="dom.html" class="pure-menu-link">Question Java arbre DOM</a>
 	                    </li>
 	                    <li class="pure-menu-item">
-	                    	<a href="ue3crluiny.html" class="pure-menu-link">UEs à 3 crédits sur Luminy</a>
+	                    	<a href="ue3crluminy.html" class="pure-menu-link">UEs à 3 crédits sur Luminy</a>
 	                    </li>
 	                    <li class="pure-menu-item">
 	                    	<a href="interluminy.html" class="pure-menu-link">Enseignants de Luminy</a>
