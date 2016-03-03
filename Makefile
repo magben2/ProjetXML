@@ -2,27 +2,29 @@ XSLT = xsltproc
 LINT = xmllint --noout
 
 
-all: clean gen dtd xsd web xq tidy java
+all: clean gen dtd xsd web tidy xq java
 
 
-gen: donnees-to-xml.xsl donnees-master.xml
+gen:
 	@echo "\nConstruction du fichier de données XML"
 	$(XSLT) donnees-to-xml.xsl donnees-master.xml
 	
 	
-dtd: master-gen.xml master-dtd.dtd
+dtd:
 	@echo "\nValidation avec la DTD"
 	$(LINT) --valid  master-gen.xml
 
 
-xsd: master-gen.xml master-schema.xsd
+xsd:
 	@echo "\nValidation avec le schema"
 	$(LINT) --schema  master-schema.xsd master-gen.xml
 	
 
-web: master-gen.xml master-stylesheet.xsl
+web:
 	@echo "\nGénération du dossier www/"
-	$(XSLT) master-stylesheet.xsl master-gen.xml
+	$(XSLT) xsl/master.xsl master-gen.xml
+	cp documentation.html www/documentation.html
+	cp -r css www/css
 	
 	
 tidy:
@@ -34,13 +36,13 @@ tidy:
 
 xq:
 	@echo "\nCréation de la requête XQuery"
-	java -cp Outils/saxon9he.jar net.sf.saxon.Query !indent=yes xq.txt > www/xq.html
+	java -cp outils/saxon9he.jar net.sf.saxon.Query !indent=yes xq.txt > www/xq.html
 
 
 java:
 	@echo "\nCréation du fichier DOM"
-	javac CreateDom.java
-	java CreateDom > dom.txt
+	javac javadom/CreateDom.java
+	java javadom/CreateDom > www/dom.xml
 	@echo "\n"
 
 
@@ -48,7 +50,4 @@ clean:
 	@echo "\nSuppression"
 	rm -rf master-gen.xml
 	rm -rf www/
-	rm -rf dom.txt
-	rm -rf *.class
-
-
+	rm -rf javadom/*.class
