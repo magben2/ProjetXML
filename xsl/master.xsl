@@ -105,7 +105,7 @@
 									<h2>Architecture</h2>
 									<p>Voici comment sont organisés nos fichiers:</p>
 									<ul>
-										<li><a href="donnees-master.xml"><b>donnees-master.xml</b></a>:
+										<li><a href="../donnees-master.xml"><b>donnees-master.xml</b></a>:
 											contient toutes les données du site du Master (intervenants, UEs,
 											spécialités, parcours...). Respecte la dtd suivante:
 											donnees-master.dtd</li>
@@ -128,7 +128,7 @@
 										<li><b>xq.txt:</b> requête XQuery qui répond à la question du
 											sujet: donner pour chaque enseignant les UEs et parcours dont il est
 											responsable.</li>
-										<li><b>documentation.html:</b> vous êtes en train de la lire.</li>
+										<li><b>documentation.html:</b> description du projet et de tous les fichiers présents.</li>
 									</ul>
 									<p>Les fichiers HTML sont organisés en plusieurs catégories:</p>
 									<ul>
@@ -136,23 +136,24 @@
 											contient des liens vers tous les autres.</li>
 										<li><b>unites.html:</b> contient une liste de liens vers tous les
 											fichiers des UEs.</li>
-										<li><b>ue-ID.html:</b> est un fichier d'une UE.</li>
+										<li><b>ue-ID.html:</b> contient une liste de liens vers tous les fichiers des UEs et la description de l'UE .</li>
 										<li><b>intervenants.html:</b> contient une liste de liens vers
 											tous les fichiers des intervenants.</li>
-										<li><b>intervenant-ID.html:</b> est un fichier d'un intervenant.</li>
+										<li><b>intervenant-ID.html:</b> contient une liste de liens vers
+											tous les fichiers des intervenants et la description de l'intervenant.</li>
 										<li><b>masters.html:</b> contient une liste de liens vers tous
 											les fichiers des spécialités.</li>
-										<li><b>specialite-ID.html:</b> est le fichier d'une spécialité.
+										<li><b>specialite-ID.html:</b> contient une liste de liens vers tous les fichiers des spécialités et la description de la spécialité.
 											Contient des liens vers les parcours.</li>
-										<li><b>parcours-ID.html:</b> est le fichier d'un parcours.</li>
-										<li><b>xq.html:</b> contient le résultat de la requête XQuery.</li>
+										<li><b>parcours-ID.html:</b> contient une liste de liens vers tous les fichiers des parcours et la description d'un parcours.</li>
+										<li><b>xq.html:</b> contient le résultat de la requête XQuery qui liste les enseignants avec, pour chacun, les enseignements qu'il assure et les parcours dans lesquels il intervient dans une liste triée.</li>
 									</ul>
 
 
 									<h2>Makefile</h2>
 									<p>
-										Le Makefile correspond à ce qui a été demandé à l'exception d'un ajout
-										de la commande <i>gen</i> qui permet de générer le fichier
+										Nous avons un Makefile conforme à ce qui était demandé.
+										Nous avons rajouté la commande <i>gen</i> qui permet de générer le fichier
 										master-gen.xml à partir du fichier de données et du fichier
 										donnees-to-xml.xsl.
 									</p>
@@ -169,12 +170,12 @@
 											*.class</li>
 									</ul>
 
-									<h2>Utilisation et matériel requis</h2>
+									<h2>Utilisation et outils requis</h2>
 									<p>
 										Il suffit de lancer la commande <i>make</i> dans le répertoire
 										ProjetXML/ afin de construire toutes les données, ouvrez ensuite
-										www/index.html. <br />
-										<br /> Pour un bon fonctionnement il vous faudra:
+										www/index.html. <br/>
+										<br/> Avant toute chose, assurez-vous d'avoir ces outils :
 									</p>
 									<ul>
 										<li><b>tidy: </b> vérification HTML.</li>
@@ -182,7 +183,7 @@
 										</b>pour créer la requête XQuery</li>
 										<li><b><a
 												href="http://www.dil.univ-mrs.fr/~massat/copie/xml/ress-XSD/">trang</a>:
-										</b>pour générer un schéma à partir d'une DTD ou XML.<br /> <i>
+										</b>pour générer un schéma à partir d'une DTD ou XML.<br/> <i>
 												Commande: java -jar trang/trang-20030619/trang.jar master-dtd.dtd
 												master-schema.xsd</i></li>
 										<li><b>Eclipse-EE</b></li>
@@ -398,17 +399,16 @@
 			<html xmlns="http://www.w3.org/1999/xhtml">
 				<xsl:call-template name="head">
 					<xsl:with-param name="title">
-						Master Informatique - Luminy
+						Unités à 3 crédits Masters Informatique | Aix-Marseille
 					</xsl:with-param>
 				</xsl:call-template>
 				<body>
-					<xsl:call-template name="menu">
-						<xsl:with-param name="title">
-							Master Informatique - Luminy
-						</xsl:with-param>
-					</xsl:call-template>
-					<div class="liste">
-						<b>Liste des UEs à 3 crédits qui se déroulent à Luminy</b>
+					<div id="layout" class="content pure-g">
+						<xsl:call-template name="menu">
+							<xsl:with-param name="title">
+								Unités à 3 crédits Masters Informatique | Aix-Marseille
+							</xsl:with-param>
+						</xsl:call-template>
 						<xsl:call-template name="faire-une-liste">
 							<xsl:with-param name="objets"
 								select="//ue[nb_credits = '3'][@id = //ref_ue[./ancestor::parcours/lieu_parc[@site = 'Luminy']]]" />
@@ -426,7 +426,7 @@
 			<html xmlns="http://www.w3.org/1999/xhtml">
 				<xsl:call-template name="head">
 					<xsl:with-param name="title">
-						Master Informatique - Luminy
+						Enseignant Luminy Master Informatique - Luminy
 					</xsl:with-param>
 				</xsl:call-template>
 				<body>
@@ -436,15 +436,12 @@
 								Master Informatique - Luminy
 							</xsl:with-param>
 						</xsl:call-template>
-						<div class="liste">
-							<b>Liste des enseignants qui n'enseignent qu'à Luminy</b>
-							<xsl:call-template name="faire-une-liste">
-								<xsl:with-param name="objets"
-									select="//intervenant[@id = //ue[@id = //ref_ue[./ancestor::parcours/lieu_parc[@site = 'Luminy']]]/ref_intervenant]" />
-								<xsl:with-param name="nom_fichier" select="'intervenant'" />
-								<xsl:with-param name="nom_elem" select="'nom_inter'" />
-							</xsl:call-template>
-						</div>
+						<xsl:call-template name="faire-une-liste">
+							<xsl:with-param name="objets"
+								select="//ue[nb_credits = '3'][@id = //ref_ue[./ancestor::parcours/lieu_parc[@site = 'Luminy']]]" />
+							<xsl:with-param name="nom_fichier" select="'ue'" />
+							<xsl:with-param name="nom_elem" select="'nom_ue'" />
+						</xsl:call-template>
 					</div>
 				</body>
 			</html>

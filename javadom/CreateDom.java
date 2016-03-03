@@ -49,7 +49,6 @@ public class CreateDom {
 		Transformer transformer = myFactory.newTransformer();
 		transformer.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-1");
 		transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-		transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
 		transformer.setOutputProperty(OutputKeys.METHOD, "xml");
 
 		transformer.transform(new DOMSource(docOutXml), new StreamResult(
